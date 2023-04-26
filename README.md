@@ -1,6 +1,6 @@
 # Sistema de Votação
 
-![Sistema de Votação](./public/images/page.png)
+![Sistema de Votação](public/imagens/page.png)
 
 O Sistema de Votação é uma aplicação web simples para coletar votos em diferentes categorias relacionadas à tecnologia, como sistema operacional, linguagem de programação, framework, banco de dados e serviço de armazenamento em nuvem.
 
