@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema de Votação</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <h2 class="title">Sistema de Votação</h2>
+
+  <p id="vote-count-message"></p>
+  <form id="voting-form">
+    <label for="userName">Nome:</label>
+    <input type="text" id="userName" name="userName" placeholder="Digite seu nome" required>
+    <br><br>
+
+    <div class="voting-category">
+      <h3>Qual melhor sistema operacional?</h3>
+      <label>
+        <input type="radio" name="os" value="Windows" required>
+        Windows
+      </label>
+      <label>
+        <input type="radio" name="os" value="Linux">
+        Linux
+      </label>
+    </div>
+
+    <div class="voting-category">
+      <h3>Qual é a melhor linguagem de programação?</h3>
+      <label>
+        <input type="radio" name="language" value="Javascript" required>
+        Javascript
+      </label>
+      <label>
+        <input type="radio" name="language" value="Python">
+        Python
+      </label>
+    </div>
+
+    <div class="voting-category">
+      <h3>Qual é o melhor framework?</h3>
+      <label>
+        <input type="radio" name="framework" value="React" required>
+        React
+      </label>
+      <label>
+        <input type="radio" name="framework" value="Angular">
+        Angular
+      </label>
+    </div>
+
+    <div class="voting-category">
+      <h3>Qual é o melhor banco de dados?</h3>
+      <label>
+        <input type="radio" name="database" value="MySQL" required>
+        MySQL
+      </label>
+      <label>
+        <input type="radio" name="database" value="PostgreSQL">
+        PostgreSQL
+      </label>
+    </div>
+
+    <div class="voting-category">
+      <h3>Qual é o melhor serviço de armazenamento em nuvem?</h3>
+      <label>
+        <input type="radio" name="cloud" value="AWS" required>
+        AWS
+      </label>
+      <label>
+        <input type="radio" name="cloud" value="Google Cloud">
+        Google Cloud
+      </label>
+    </div>
+
+    <button type="submit">Votar</button>
+  </form>
+
+  <div id="results">
+    <h2>Resultados da Votação</h2>
+    <div id="votes-container"></div>
+  </div>
+  
+
+
+  <script src="script.js"></script>
+</body>
+
+</html>
